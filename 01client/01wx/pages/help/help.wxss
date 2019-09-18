@@ -1,0 +1,26 @@
+/* pages/help/help.wxss */
+.headerItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 750rpx;
+  height: 80rpx;
+}
+.top{
+  width: 50rpx;
+  height: 50rpx;
+  background:#22DE82;
+  color: white;
+  text-align: center;
+  margin-left: 10rpx;
+  margin-right: 30rpx;
+}
+.title{
+  font-size: 33rpx;
+}
+
+.diver{
+  width: 100%;
+  height: 5rpx;
+  background: rgb(158, 142, 142);
+}

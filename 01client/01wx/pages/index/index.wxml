@@ -1,0 +1,47 @@
+<view>
+  <view>
+    <swiper class="headr" indicator-dots='true' autoplay='true' duration='{{500}}' interval='{{2000}}' >
+      <view wx:for='{{imgUrls}}' wx:key="item" wx:for-item="imgUrls">
+        <swiper-item>
+          <image  src='{{imgUrls.url}}'></image>
+        </swiper-item>
+      </view>
+    </swiper>
+  </view>
+  
+  
+ <view class="body">
+  <scroll-view  style='height:{{height}}rpx; ' scroll-y="true">
+  <view class="title">
+    精选课堂
+  </view>
+    <view class='scrollItem'  wx:for="{{lessons}}" wx:key="index" wx:for-item="lesson">
+      <view class='examinationView'>
+        <view class='item' bindtap='toActivity' data-yjs="{{lesson.id}}">
+        <image class='icon' src='{{lesson.url}}'></image>
+          <view class='inforBox'>
+            <view>
+              <view class='inforTitle'>
+                {{lesson.inforTitle}}
+              </view>
+              <view class='content'>
+                 {{lesson.content}}
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="separate"></view>
+    </view>
+   
+
+  <!-- 作者 -->
+  <view class="author"> 
+     
+      新浪微博：数学孙宗义
+      <view></view>
+      链接：https://weibo.com/u/7283004604
+  </view>
+  </scroll-view>
+  </view>
+</view>

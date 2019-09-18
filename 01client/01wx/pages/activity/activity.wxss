@@ -1,0 +1,211 @@
+/* pages/examinationInfor/examinationInfor.wxss */
+
+/**index.wxss**/
+
+.section{
+  width: 750rpx;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section .Video{
+  margin-top: 10rpx;
+ background:black;
+}
+.btn-area{ 
+  position: relative;
+   margin: 30rpx;  
+  }
+.btn-area .input{
+  width: 150%;
+    position: relative;
+    left: -100rpx;
+  }
+
+.btn-area .button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-area .button-1{
+  position: relative;
+    text-align: center;
+    color:#21AAFF;
+    font-size: 25rpx;
+     border: 1rpx solid#21AAFF;
+}
+.btn-area .button-2{
+    text-align: center;
+    color:#21AAFF;
+    font-size: 25rpx;
+   display: block;
+    border: 1rpx solid#21AAFF;
+}
+.btn-area .button-none{
+  display: none;
+}
+.btn-area .button-3{
+  text-align: center;
+  color:rgb(51, 49, 49);
+  border: 1rpx solid rgb(66, 64, 64);
+  font-size: 25rpx;
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 750rpx;   
+}
+.introduction .top{
+   display: flex;
+    flex-direction: row;
+    
+}
+.introduction .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;  
+    text-align: center;
+ }
+ .introduction .diver{
+    width: 100%;
+    height: 10rpx;
+    margin-top: 10rpx;
+    background: rgb(79, 193, 238);
+ }
+.introduction .first-1{
+  
+    width: 100%;
+    font-size: 35rpx;
+    font-weight: bold;
+  color: rgb(29, 166, 230);
+}
+.introduction .first-2{
+    width: 100%;
+    font-size: 30rpx;
+    font-weight: bold;
+  color: rgb(162, 168, 165);
+}
+.introduction .second{
+  display: flex;
+  justify-content: space-between;
+   position: relative;
+    margin: 10rpx;
+    margin-top: 50rpx;
+    font-size: 33rpx
+}
+ .introduction .second-block{
+   display: block;
+ }
+.introduction .second-none{
+   display: none;
+}
+.second .comment{
+  display: flex;
+  flex-direction: column;
+  height: 270rpx;
+ 
+}
+.comment .comment-1{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30rpx;
+}
+.comment-1 image{
+   margin-left: 20rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.comment-1 .name{
+  margin-left: 20rpx;
+  color: rgb(1, 11, 12);
+}
+.comment-1 .content{
+  margin-left: 30rpx;
+  color: rgb(70, 70, 65);
+}
+.commentButton{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 750rpx;
+}
+.commentButton input{
+  width: 78%;
+  height: 60rpx;
+ border: 1rpx solid rgb(39, 38, 38);
+}
+.commentButton button{
+ width: 150rpx;
+ height: 60rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+  background: rgb(60, 134, 245)
+}
+.practice{
+   display: flex;
+   flex-direction: column;
+   width: 750rpx;
+   white-space: nowrap;
+}
+.problemTitel{
+  margin-left: 20rpx;
+  margin-right: 60rpx;
+  font-size: 30rpx;
+  color: rgb(235, 55, 55);
+  /* background: rgb(68, 241, 184); */
+  display: inline-block;
+}
+.problemTitel .div-1{
+  padding: 10rpx;
+  color: white;
+  background:  rgb(68, 241, 184);
+  border-radius: 10rpx;
+}
+.problemTitel .div-2{
+   padding: 10rpx;
+  color: rgb(64, 63, 65);
+  background:  rgb(230, 241, 238);
+   border-radius: 10rpx;
+}
+.problem{
+  margin-top: 10rpx;
+   width: 730rpx;
+   height: 270rpx;
+   /* background: red; */
+  }
+  .problem .pro-an{
+    margin: 10rpx;
+    margin-top: 20rpx;
+  }
+  .problem-answer{
+    display: flex;
+    flex-direction: row;
+    color: white;
+   
+  }
+    .problem-answer-1{
+    width: 100rpx;
+    height: 50rpx;
+    text-align: center;
+    border-radius: 25rpx;
+    color: white;
+    background: rgb(21, 226, 21);
+    margin-right: 50rpx;
+  }
+  
+  .answer-1{
+   display: none;
+    color: red;
+  }
+    .answer-2{
+    display: block;
+    color: red;
+  }

@@ -1,0 +1,15 @@
+<view class="container">
+  <view class="download-listBox">
+      <view class="download-list-item" wx:for="{{listing}}" wx:key="key" bindtap="toExaminationInfor">
+          <image class="img" src='{{item.image}}'></image>
+          <view class="inforBox">
+            <view class=".download-inforTitleBox">
+              <view class="title">{{item.title}}</view>
+              <text class="cast">{{item.teacher}}</text>
+            </view>
+            <view class="download-infor-rightBox">
+            </view>
+          </view>
+        </view>
+    </view>
+</view>

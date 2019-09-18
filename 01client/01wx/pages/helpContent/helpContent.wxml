@@ -1,0 +1,11 @@
+<view>
+  <scroll-view>
+  <view  wx:for="{{helpContent}}"  wx:key="index"   bindtap='helpTopItem'>
+      <view class='headerItem' >
+                <view class="top">{{item.top}}</view>
+                <view class="title">{{item.content}}</view>                 
+        </view>
+        <view class="diver"></view>    
+  </view>    
+  </scroll-view>
+</view>

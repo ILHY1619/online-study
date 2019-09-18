@@ -1,0 +1,7 @@
+<!--pages/wrong/wrong.wxml-->
+<view class="container">
+  <view class="box">
+    <image class="img" src="https://imgs-1300160165.cos.ap-chengdu.myqcloud.com/wrong.png"></image>
+    <view class="word">暂无错题</view>
+  </view>
+</view>

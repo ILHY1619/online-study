@@ -1,0 +1,102 @@
+.headr{
+  width: 750rpx;
+  
+}
+.headr image{
+  width: 100%;
+}
+.examinationView {
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.examinationView .title {
+  margin-top: 40rpx;
+  color: #111;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.examinationView .item {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.examinationView .item .icon {
+  width: 300rpx;
+  height: 240rpx;
+  border-radius: 10rpx;
+}
+
+.inforBox{
+  padding-left: 20rpx;
+  width: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.inforBox .inforTitle{
+  color: #111;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.inforBox .content{
+  color: #979292;
+  margin-top: 28rpx;
+  font-size: 32rpx;
+}
+
+.body{
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 750rpx;
+}
+.body-first{
+   display: flex;
+}
+.scrollItem{
+  width: 99%;
+  display: inline-block;
+  margin-left:10rpx;
+  position: relative;
+}
+.author{
+  margin-top: 50rpx;
+  margin-bottom: 30rpx;
+  margin-left: 50rpx;
+  border-radius: 20rpx;
+  width: 600rpx;
+  height: 150rpx;
+  color: white;
+  font-size: 35rpx;
+  background: linear-gradient(rgb(141, 178, 247) 20%,rgb(48, 124, 224) 40%, rgb(32, 100, 226) 60%, blue 80%);
+  padding: 30rpx;
+}
+.separate{
+  width: 100%;
+  height: 3rpx;
+  background: linear-gradient(rgb(18, 226, 233) 20%,rgb(66, 157, 231) 40%, rgb(98, 131, 238) 60%, rgb(74, 62, 235) 80%);
+   margin-top: 30rpx;
+   margin-bottom: 10rpx;
+}
+.separate-1{
+   width: 100%;
+  height: 3rpx;
+  background: linear-gradient(rgb(236, 238, 151) 20%,rgb(214, 241, 92) 40%, rgb(238, 235, 34) 60%, rgb(241, 226, 9) 80%);
+   margin-top: 30rpx;
+   margin-bottom: 10rpx;
+}
+.body .title{
+  color: rgba(15, 17, 19, 0.712);
+  font-weight: 700;
+  font-size: 40rpx;
+}

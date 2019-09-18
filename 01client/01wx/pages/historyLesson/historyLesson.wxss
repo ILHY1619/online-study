@@ -1,0 +1,74 @@
+/* pages/historyLesson/historyLesson.wxss */
+
+.container {
+  width: 750rpx;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  width: 750rpx;
+  height: 1000rpx;
+}
+
+/**
+* 列表
+*/
+.download-listBox {
+  margin-top: 10rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.download-list-item {
+  width: 700rpx;
+  height: 180rpx;
+  margin: 0 20rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.download-list-item .img {
+  width: 300rpx;
+  height: 180rpx;
+}
+.download-list-item .inforBox {
+  width: 370rpx;
+  height: 180rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.download-inforTitleBox{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100rpx;
+}
+
+.download-inforTitleBox .title {
+  color: #333;
+  font-size: 30rpx;
+}
+
+.download-inforTitleBox .cast {
+  color: #999;
+  font-size: 26rpx;
+}
+
+.download-infor-rightBox {
+  margin-top: 20rpx;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.download-infor-rightBox .datasize {
+  color: #999;
+  font-size: 26rpx;
+}

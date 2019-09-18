@@ -1,0 +1,26 @@
+<view class="container">
+  <view class="box" wx:if="{{listing.length == 0}}">
+    <image class="img" src="https://imgs-1300160165.cos.ap-chengdu.myqcloud.com/download-null.png "></image>
+  </view>
+  <view wx:else>
+    <view class="download-topBar">
+      <view class="edit" bindtap="bianji">{{text}}</view>
+      <view class="edit" wx:if="{{isDelete}}" bindtap="deleteItem">删除</view>
+    </view>
+    <view class="download-listBox">
+      <view class="download-list-item" wx:for="{{listing}}" wx:key="key">
+          <view class="inforBox">
+            <view class=".download-inforTitleBox" bindtap="toExaminationInfor">
+              <view class="title">{{item.title}}</view>
+              <text class="cast">{{item.teacher}}</text>
+            </view>
+            <view class="download-infor-rightBox">
+          <view class="deleteButton" wx:if="{{isDelete}}" bindtap="deleteButton" data-id="{{item.id}}">
+                <image class="gou" src="../../imgs/user/gou.png" wx:if="{{item.isTap}}" data-id="{{item.id}}"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+    </view>
+  </view>
+</view>

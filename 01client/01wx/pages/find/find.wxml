@@ -1,0 +1,38 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="header">
+        <view class="title">
+          <image src="https://cmyk-1300160178.cos.ap-chengdu.myqcloud.com/photo.jpg"></image>
+        </view>
+        <view class="title">
+         <image  src="https://cmyk-1300160178.cos.ap-chengdu.myqcloud.com/times.jpg"></image>
+        </view>
+    </view>
+   
+   <view>
+    <scroll-view class='headerBox' scroll-x="true">
+        <view class='headerItem' wx:for="{{findHeadr}}" wx:key="index" wx:for-item="courses">
+            <view class='headerItemView' bindtap='clickTopItem' data-yjs="{{index}}">
+                <view class='{{coursesIndex==index?"titleSelect":"title"}}'>{{courses.title}}</view>
+                <view class='line' wx:if="{{coursesIndex==index}}"></view>
+            </view>
+        </view>    
+    </scroll-view>
+    <view class='divider'></view>
+   </view>
+
+
+      <view>
+      <scroll-view  style='height:{{height}}rpx; ' scroll-y="true">
+          <view class="item" bindtap="toActivity" wx:for="{{findHeadr[coursesIndex].courses}}" wx:key="index" wx:for-item="courses" data-acti="{{courses.id}}">
+            <view class="item_left">
+                <view class="top"> {{courses.top}}</view>     
+            </view>     
+          <image class="item_right" src="{{courses.url}}"></image>
+         <view class='fengge'></view>
+        </view>  
+    </scroll-view>
+      </view>
+       
+
+</view>

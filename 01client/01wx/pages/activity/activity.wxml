@@ -1,0 +1,85 @@
+<!--pages/examinationInfor/examinationInfor.wxml-->
+<view class="section" wx:for="{{activity}}" wx:key="index" wx:for-item="vid">
+  <view class="Video">
+    <video id="myVideo" src="{{vid.url}}" enable-danmu danmu-btn controls></video>
+  </view>
+
+  <view class="btn-area">
+    <view class="input">
+      <input bindblur="bindInputBlur" placeholder="请输入弹幕" />
+    </view>
+    <view class="button">
+      <view>
+        <button bindtap="bindSendDanmu" class="button-1">发送弹幕</button>
+      </view>
+      <view>
+        <button bindtap="bindCollect" data-yjs="{{index}}" class='{{coursesIndex==index?"button-2":"button-none"}}'>收藏</button>
+        <button bindtap="bindSend" data-yjs="{{index}}" class='{{coursesIndex!=index?"button-3":"button-none"}}'>已收藏</button>
+      </view>
+    </view>
+
+  </view>
+  <view class="introduction">
+    <view class="top">
+      <view class="title" wx:for="{{title}}" wx:key="index" wx:for-item="title" bindtap='clickTopItem' data-yjs="{{index}}">
+        <view class="{{titleIndex==index?'first-1':'first-2'}}">{{title.top}}</view>
+        <view class="diver" wx:if="{{titleIndex==index}}"></view>
+      </view>
+    </view>
+
+    <view class="second">
+      <view class='{{secondIndex==0?"second-block":"second-none"}}'>{{vid.course}}</view>
+      <view class='{{secondIndex==1?"second-block":"second-none"}}'>
+
+        <scroll-view class="practice" scroll-x="true">
+          <view class="problemTitel" wx:for="{{practice}}" wx:key="index" wx:for-item="practice" data-problem="{{index}}" bindtap="problemTopItem">
+            <view class='{{problemIndex==index?"div-1":"div-2"}}'>{{practice.title}}</view>
+          </view>
+        </scroll-view>
+        <scroll-view scroll-y="true">
+          <view class="problem" wx:for="{{problem}}" wx:key="index" wx:for-item="problem" data-problem="{{problemIndex}}" wx:if="{{problemIndex==index}}">
+            <view class="pro-an">
+                  {{problem.problem}}
+            </view>
+            <view class="pro-an">
+                  A:{{problem.A}}
+            </view>
+            <view class="pro-an">
+                  B:{{problem.B}}
+            </view>
+            <view class="pro-an">
+                  C:{{problem.C}}
+            </view>
+            <view class="pro-an">
+                  D:{{problem.D}}
+            </view>
+            <view class="problem-answer" bindtap="problemanswer">
+                  <view class="problem-answer-1">答案:</view><view 
+class='{{answer==0?"answer-1":"answer-2"}}'>{{problem.answer}}</view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
+
+
+      <view class='{{secondIndex==2?"second-block":"second-none"}}'>
+        <scroll-view class="comment" scroll-y="true">
+          <view>
+            <view class="comment-1" wx:for="{{comment}}" wx:key="key" wx:for-item="comment" data-comment="{{key}}">
+              <view>
+                <image src="{{comment.url}}"></image>
+              </view>
+              <view class="name">{{comment.name}}:</view>
+              <view class="content">{{comment.content}}</view>
+            </view>
+          </view>
+        </scroll-view>
+
+        <view class="commentButton">
+          <input bindinput="bindKeyInput" placeholder="输入同步到view中" />
+          <button bindtap="bindKeyButton">发送</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

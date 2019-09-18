@@ -1,2 +1,2 @@
 # online-study
-this project is for study
+this is a project

@@ -1,0 +1,260 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 750rpx;
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.userinfo button{
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  width: 200rpx;
+  height: 100rpx;
+  font-size: 40rpx;
+
+  background: rgb(220, 220, 233);
+  color: rgb(51, 147, 236)
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+
+/**
+* 头像栏
+*/
+.container .head {
+  display: flex;
+  flex-direction: row;
+  line-height: 50rpx;
+  margin-bottom:10rpx;
+  padding: 30rpx 20rpx;
+  border-radius: 20rpx;
+  background: rgb(248, 246, 246);
+}
+.head .first-img {
+  width: 150rpx;
+  height: 150rpx;
+  margin-right: 40rpx;
+  border-radius: 75rpx;
+}
+.head-nameBox {
+  height: 50rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 20rpx 0 0 0;
+}
+.head-name {
+  font-weight: 700;
+  font-size: 40rpx;
+  margin-top: 20rpx;
+  margin-right: 20rpx;
+}
+.head-icon-change {
+  margin-top: 24rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+/**
+* 名称修改弹窗
+*/
+.modelBox {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 999;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+}
+.modalChange {
+  width: 70%;
+  position: fixed;
+  top: 350rpx;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.windowRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 110rpx;
+  width: 100%;
+}
+.userTitle {
+  font-size: 30rpx;
+  color: #666;
+  margin: 30rpx;
+}
+.newName {
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 30rpx;
+}
+.newName-input {
+  border: 1rpx solid #999;
+  width: 80%;
+  border-radius: 20rpx;
+  padding-left: 10rpx;
+}
+.modelButtonBox {
+  width: 100%;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modelButton {
+  width: 30%;
+  height: 60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  margin-top: 10rpx;
+  margin-bottom: 30rpx;
+  border-radius: 15rpx;
+}
+.modelButton-yes {
+  background-color: #21aaff;
+  color: #fbf1e8;
+  border: 0;
+  margin-left: 65rpx;
+}
+.modelButton-back {
+  color: #21aaff;
+  border: 2rpx solid #999;
+  background-color: #fff;
+  margin-right: 65rpx;
+}
+
+/**
+* 我的课程
+*/
+.course {
+  margin: 0 auto;
+  border-radius: 20rpx;
+  width: 650rpx;
+  height: 200rpx;
+ background: linear-gradient(to right, rgb(10, 185, 240) ,rgb(104, 185, 240) , rgb(140, 180, 250)); 
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+}
+.course .course-first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.course .course-my {
+  font-size: 40rpx;
+  color: white;
+  margin-left: 15rpx;
+}
+.course-lookAllBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150rpx;
+  align-items: center;
+  font-size: 30rpx;
+  color: white;
+}
+.course .course-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-img {
+  height: 30rpx;
+  width: 30rpx;
+  margin-top: 6rpx;
+}
+.course-lastLook {
+  margin-left: 30rpx;
+  margin-top: 35rpx;
+  color: white;
+  font-size: 30rpx;
+}
+.course-continue {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-top: 15rpx;
+  margin-bottom: 20rpx;
+}
+.course-continue .first {
+  color: white;
+  font-size: 30rpx;
+  border: 1rpx solid white;
+  border-radius: 30rpx;
+  padding: 10rpx 20rpx 16rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-continue .course-first-img {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 5rpx;
+}
+
+/**
+* 三栏菜单
+*/
+.management {
+  margin:  0 auto;
+  width: 700rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50rpx;
+}
+.management-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+.management-text .first {
+  display: flex;
+  flex-direction: row;
+  font-size: 30rpx;
+}
+.management-text-img1 {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.management-text-img2 {
+  width: 35rpx;
+  height: 35rpx;
+}
+.tool{
+  height: 53rpx;
+  line-height: 53rpx;
+  font-size: 35rpx;
+  color: rgb(75, 72, 72);
+}

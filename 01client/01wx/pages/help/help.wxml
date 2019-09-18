@@ -1,0 +1,7 @@
+<view wx:for="{{help}}" wx:key="index" bindtap='helpTopItem' data-help="{{index}}">
+  <view class='headerItem'>
+    <view class="top">{{item.id}}</view>
+    <view class="title">{{item.title}}</view>
+  </view>
+  <view class="diver"></view>
+</view>

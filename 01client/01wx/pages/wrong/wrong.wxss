@@ -1,0 +1,30 @@
+/* pages/wrong/wrong.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 750rpx;
+  height: 1000rpx;
+}
+
+.box {
+  margin: 0 auto;
+  width: 720rpx;
+  height: 260rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.box .img {
+  margin: 0 auto;
+  width: 520rpx;
+  height: 240rpx;
+}
+
+.box .word {
+  width: 100%;
+  text-align: center;
+  color: #97a1ad;
+}

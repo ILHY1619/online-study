@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/activity/activity",
+    "pages/find/find",
+    "pages/user/user", 
+    "pages/help/help",
+    "pages/helpContent/helpContent",
+    "pages/wrong/wrong",
+    "pages/favorite/favorite",
+    "pages/historyLesson/historyLesson"
+  ],   
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#fb5d5d",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "imgs/index.png",
+        "selectedIconPath": "imgs/index_select.png",
+        "text": "课堂"
+      },
+      {
+        "pagePath": "pages/find/find",
+        "iconPath": "imgs/find.png",
+        "selectedIconPath": "imgs/find_select.png",
+        "text": "发现"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "imgs/user.png",
+        "selectedIconPath": "imgs/user_select.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

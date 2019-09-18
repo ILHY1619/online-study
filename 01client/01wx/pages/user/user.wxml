@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover" bindtap="chooseImage"></image>
+      <text class="userinfo-nickname" bindtap="changeName">{{userInfo.nickName}}</text>
+    </block> 
+    
+   <!-- 修改名字。。。。有问题 -->
+       <view class="modalChange" catchtouchmove='preventTouchMove' wx:if='{{showModal}}'>
+      <view class='windowRow'>
+        <text class='userTitle'>修改名称</text>
+      </view>
+      <view class='newName'>
+        <input bindinput='newNameInput' placeholder=' {{userName}}' class='newName-input'></input>
+      </view>
+      <view class='modelButtonBox'>
+        <view class='modelButton modelButton-yes' bindtap='ok'>确定</view>
+        <view class='modelButton modelButton-back' bindtap='back'>返回</view>
+      </view>
+    </view>
+    <!-- 修改名字。。。。有问题 -->
+  
+  </view>
+
+
+  <view class="modelBox" catchtouchmove='preventTouchMove' wx:if='{{showModal}}'></view>
+
+  <view class="course">
+    <view class="course-first">
+      <view class="course-my">我的课程</view>
+      <navigator url="/pages/historyLesson/historyLesson" open-type="navigateTo">
+        <view class="course-lookAllBox">
+          <text class="course-text">历史记录</text>
+          <image class="course-img" src='../../imgs/user/right-white-icon.png'></image>
+        </view>
+      </navigator>
+    </view>
+    <view class="course-lastLook">上次看到：AP-Riemann Sum</view>
+    <view class="course-continue">
+      <view class="first" bindtap="toExaminationInfor">
+        <image class="course-first-img" src='../../imgs/user/bofang-white-icon.png'></image>
+        继续观看
+      </view>
+    </view>
+  </view>
+  <view class="management">
+
+    <scroll-view style='height:{{height}}rpx; ' scroll-y="true">
+      <view wx:for='{{user}}' wx:key="item" wx:for-item="user">
+
+        <navigator url="{{user.url}}" open-type="navigateTo">
+          <view class="management-text">
+            <view class="first">
+              <view>
+                <image class="management-text-img1" src='{{user.urlimg1}}'></image>
+              </view>
+              <view class="tool">{{user.name}}</view>
+            </view>
+            <view>
+              <image class="management-text-img2" src='{{user.urlimg2}}'></image>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </scroll-view>
+
+  </view>
+</view>
